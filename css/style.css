@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Judson font src*/
+/* font-family: "Judson", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    
+    /* nav */
+    --nav-height: 140px;
+    --nav-text : 24px;
+
+    /* main */
+    --title: 36px;
+    --title-detail : 24px;
+
+    --title-color :  rgba(255, 255, 255, 0.87);
+    --title-detail-color : rgba(255, 255, 255, 0.64);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #141312;
+    color: #fff;
+}
+ 
+img{
+    width: 100%;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+}
+
+body>header{
+    position: absolute;  
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+ 
+ 
