@@ -9,52 +9,51 @@
 /* font-family: "Judson", serif; */
 @import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
 
-:root{
-    
+:root {
+
     /* nav */
     --nav-height: 140px;
-    --nav-text : 24px;
+    --nav-item: 24px;
 
     /* main */
     --title: 36px;
-    --title-detail : 24px;
+    --title-detail: 24px;
 
-    --title-color :  rgba(255, 255, 255, 0.87);
-    --title-detail-color : rgba(255, 255, 255, 0.64);
+    --title-color: rgba(255, 255, 255, 0.87);
+    --title-detail-color: rgba(255, 255, 255, 0.64);
 
+    --fff: #FFF;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #141312;
-    color: #fff;
+    font-family: 'Pretendard-Regular';
 }
- 
-img{
+
+img {
     width: 100%;
 }
 
-ul, ol{
+ul,
+ol {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
+    color: #fff;
 }
 
-html, body{
+html,
+body {
     width: 100%;
 }
 
-body>header{
-    position: absolute;  
+body>header {
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
 }
-
-
- 
  
