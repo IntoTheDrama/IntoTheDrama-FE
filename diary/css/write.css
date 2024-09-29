@@ -16,9 +16,9 @@
      border-radius: 11.63px;
      border: 0.5px solid #FFF;
      /* opacity: 0.25; */
-     background: rgba(14, 14, 14, 0.80);
+     /* background: rgba(14, 14, 14, 0.80); */
      /* background-color: white; */
-     backdrop-filter: blur(6.5px);
+     /* backdrop-filter: blur(6.5px); */
 
  }
 
@@ -81,6 +81,7 @@
      color: black;
      background: rgba(235 235, 235, 1);
      cursor: pointer;
+     border: none;
  }
 
  .send:hover {
