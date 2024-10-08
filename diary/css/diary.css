@@ -1,0 +1,119 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0 50px 0;
+}
+
+.all-container {
+    width: 100%;
+    max-width: 1552px;
+    height: 878px;
+    border-radius: 11.63px;
+    border: 2.35px solid #FFF;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6.5px);
+    padding: 62px 0 0 92px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--title-detail-color);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 23px 0 41px 0;
+}
+
+/* diary-list 부분 */
+.scroll-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 82px;
+    max-height: 416px;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+/* 스크롤바 디자인 */
+.scroll-container::-webkit-scrollbar {
+    border-radius: 10px;
+    background: #F5F6FA;
+    width: 11px;
+    height: 692px;
+}
+
+.club-list::-webkit-scrollbar-thumb {
+    background-color: #E1E2E9;
+    border-radius: 10px;
+}
+
+
+.diarylist-container {
+    width: calc(33.33% - 82px);/* 화면을 3등분하여 각 칸에 3개씩 배치 */
+    height: 416.37px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 2.947px 2.947px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    padding: 37.92px 0 0 33px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dramaTitle {
+    color: rgba(40, 62, 232, 0.64);
+    background-color: #FFF;
+    width: 334px;
+    font-size: 23.576px;
+    font-weight: 600;
+}
+
+.detail {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #FFF;
+    font-size: 18.419px;
+    line-height: 1.35;
+    width: 334px;
+    height: 220px;
+}
+
+.user-container {
+    display: flex;
+    gap: 15px;
+    background-color: #FFF;
+}
+
+.user-name {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFF;
+}
+
+/* img size 조절 */
+.write-btn {
+    width: 173.776px;
+    height: 59.609px;
+    margin-bottom: 50px;
+}
+
+.user-container>img {
+    width: 33.52px;
+    height: 33px;
+    background-color: #FFF;
+}
+
+.dot {
+    width: 65.043px;
+    height: 47px;
+    margin: -10px 0 0 110px;
+}
+
+.dot>img {
+    background-color: #FFF;
+}
