@@ -1,12 +1,15 @@
- html{
-    background-image: url('/image/background/diary-bg.png');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; /* 스크롤 시에도 배경 이미지 고정 */
-}
-body>header{
-    background-color: transparent;
-}
+ html {
+     background-image: url('/image/background/diary-bg.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     /* 스크롤 시에도 배경 이미지 고정 */
+ }
+
+ body>header {
+     background-color: transparent;
+ }
+
  main {
      margin-top: 200px;
      display: flex;
@@ -19,17 +22,18 @@ body>header{
 
  .all-container {
      width: 100%;
+     height: 100vh;
      max-width: 1201px;
-     height: 679px;
 
+     height: 679px;
      border-radius: 11.63px;
      border: 0.5px solid #FFF;
-     /* opacity: 0.25; */
-     /* background: rgba(14, 14, 14, 0.80); */
-     /* background-color: white; */
-     /* backdrop-filter: blur(6.5px); */
-
+     background: rgba(14, 14, 14, 0.25);
+     backdrop-filter: blur(6.5px);
+     position: relative;
+     z-index: 0;
  }
+
 
  #write-container {
      display: flex;
@@ -48,24 +52,28 @@ body>header{
      border: none;
      font-size: 25px;
      margin-bottom: 20px;
- }
-
- #writing-box {
-     padding: 38px 0 0 68px;
-     font-size: 18px;
-     color: #D6D6D6;
-
-     border-radius: 5px;
-     /* opacity: 0.1; */
-     /* background: #000; */
-     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-     backdrop-filter: blur(25px);
-     resize: none;
-     outline: none;
+     background-color: transparent;
+     color: var(--title-color);
  }
 
  input::placeholder {
      color: var(--title-color);
+ }
+
+ textarea::placeholder {
+     color: #B6ADAD;
+ }
+
+ #writing-box {
+     font-size: 18px;
+     line-height: 1.5;
+     color: #B6ADAD;
+     padding: 50px 50px 0 50px;
+     background-color: rgb(30 30 30 / 50%);
+     border-radius: 5px;
+     border: 1px solid #7a7a7a;
+     resize: none;
+     outline: none;
  }
 
  .count {
@@ -84,7 +92,7 @@ body>header{
      width: 100%;
      max-width: 419px;
      height: 51px;
-     border-radius: 11.746px;
+     border-radius: 8px;
      font-size: 18px;
      opacity: 0.8;
      color: black;
@@ -96,4 +104,123 @@ body>header{
  .send:hover {
      background: rgba(255, 255, 255, 0.87);
      color: black
+ }
+
+ @media (max-width: 1480px) {
+     .all-container {
+         max-width: 1000px;
+     }
+ }
+
+ @media (max-width: 1200px) {
+     .all-container {
+         max-width: 800px;
+         height: 600px;
+     }
+     #write-container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        margin: 0 auto;
+     }
+
+     #title {
+         font-size: 20px;
+     }
+
+     #writing-box,
+     .count {
+         font-size: 15px;
+     }
+
+     .send {
+         width: 271px;
+         height: 44px;
+     }
+      
+ }
+ @media (max-width:900px){
+    .all-container{
+        width: 600px;
+    }
+    #write-container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 450px;
+        margin: 0 auto;
+     }
+     .count{
+        margin-bottom: 20px;
+     }
+     .send{
+        width: 250px;
+        height: 40px;
+     }
+ }
+
+@media (min-width: 551px) and (max-width: 650px){
+    .all-container{
+        width: 500px;
+        height: 560px;
+   }
+   #write-container{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 385px;
+    margin: 0 auto;
+ }
+ #title{
+    font-size: 17px;
+ }
+ #writing-box{
+    font-size: 13px;
+    padding: 20px;
+ }
+ .send{
+    font-size: 16px;
+ }
+ .prev-btn{
+    width: 25px;
+    height: 25px;
+ }
+} 
+    
+ @media (max-width:550px){
+    .all-container{
+         width: 320px;
+         height: 600px;
+    }
+    #write-container{
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        margin: 0 auto;
+     }
+     #writing-box{
+        padding: 20px 10px 0 12px;
+     }
+     #title{
+        font-size: 15px;
+        margin-left: 10px;
+     }
+     .count{
+        font-size: 10px;
+     }
+     #writing-box{
+        font-size: 10px;
+        height: 320px;
+     }
+     .prev-btn{
+        margin: 30px 20px;
+        width: 22px;
+        height: 22px;
+     }
+     .send{
+        width: 180px;
+        height: 33px;
+        font-size: 13px;
+     }
  }
