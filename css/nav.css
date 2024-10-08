@@ -1,18 +1,13 @@
-* {
-    background-color: black;
+body {
     color: #fff;
 }
 
 body>header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 100;
+    width: 100%;
 }
 
 header {
-
     padding: 0 184px;
 }
 
