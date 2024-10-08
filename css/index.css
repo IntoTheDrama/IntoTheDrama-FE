@@ -1,12 +1,19 @@
-
+body{
+    background-color: black;
+}
+body>header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black; /*임시*/
+}
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 1200px;
-    /* background: url(/image/detail/main-background.png) no-repeat center center;
-    background-size: cover */
 }
 
 .main-logo {

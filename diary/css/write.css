@@ -1,3 +1,12 @@
+ html{
+    background-image: url('/image/background/diary-bg.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* 스크롤 시에도 배경 이미지 고정 */
+}
+body>header{
+    background-color: transparent;
+}
  main {
      margin-top: 200px;
      display: flex;
