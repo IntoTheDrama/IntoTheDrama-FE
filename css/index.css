@@ -1,19 +1,17 @@
-body{
-    background-color: black;
+html {
+    background-image: url('/image/background/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-body>header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: black; /*임시*/
-}
+
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 1200px;
+    
 }
 
 .main-logo {
@@ -24,7 +22,7 @@ body>header{
 .title1 {
     font-size: 65px;
     font-weight: 500;
-    margin: 57px 0 363px 0;
+    margin: 57px 0 340px 0;
 }
 
 .scroll-btn {
@@ -38,13 +36,11 @@ body>header{
     justify-content: center;
     align-items: center;
     height: 500px;
-    /* background: url(/image/detail/main-background.png) no-repeat center center;
-    background-size: cover */
 }
 
 .title-container {
     margin-bottom: 150px;
- 
+    margin-top: -250px;
 }
 
 .title-container>p {
@@ -71,38 +67,41 @@ body>header{
 /* tablet */
 @media screen and (max-width:1024px) {
     #main{
-        height: 1000px;
+        height: 800px;
+        margin-top: 100px;
     }
     .main-logo {
-        max-width: 470px;
-        height: 130px;
+        max-width: 440px;
+        height: 110px;
     }
     .title1{
         font-size: 45px;
         margin: 0;
+        margin-bottom: 208px;
         line-height: 2;
+        
     }
-
-    /* .section1{
-        height: 700px; 
-     } */
 
     .title-container>p{
-        font-size: 35px;
+        font-size: 30px;
     }
-
-    
 }
 
 /* mobile */
 @media screen and (max-width:700px){
     #main{
         /* 임시 */
-        height: 600px; 
+        height: 550px; 
     }
     .main-logo {
-        max-width: 290px;
-        height: 80px;
+        max-width: 250px;
+        height: 60px;
+         
+    }
+    .scroll-btn{
+        width: 37px;
+    height: 57px;
+    margin-top: 80px;
     }
     .title1{
         font-size: 26px;
@@ -118,9 +117,10 @@ body>header{
 
     .title-container{
         padding: 0 50px;
+        margin-top: -200px;
     }
     .section1{
-        height: 400px; 
+        height: 300px; 
      }
 }
 
