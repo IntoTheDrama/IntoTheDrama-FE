@@ -1,0 +1,28 @@
+html {
+    background-color: black;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.explain-container {
+    padding-right: 660px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 24px;
+    font-weight: 500;
+    margin: 23px 0 41px 0;
+}
