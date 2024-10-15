@@ -8,6 +8,7 @@ html {
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin-top: 200px;
 }
 
 .explain-container {
@@ -25,4 +26,27 @@ html {
     font-size: 24px;
     font-weight: 500;
     margin: 23px 0 41px 0;
+}
+
+.poster {
+    width: 260px;
+    height: 430px;
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.year {
+    color: rgba(255, 255, 255, 0.64);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 13px;
 }
