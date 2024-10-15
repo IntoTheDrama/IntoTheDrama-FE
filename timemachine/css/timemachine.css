@@ -1,10 +1,10 @@
-* {
+html {
     background-color: black;
 }
 
 #main {
     margin: 140px 0 50px 0;
-
+    padding: 0 184px;
 }
 
 .img-container {
@@ -18,9 +18,7 @@
     height: 450px;
 }
 
-.explain-container {
-    padding: 0 184px;
-}
+.explain-container {}
 
 .title {
     font-size: 36px;
@@ -34,6 +32,37 @@
     margin: 23px 0 41px 0;
 }
 
+.poster {
+    width: 280px;
+    height: 500px;
+    /* 애니메이션 효과 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.all-container {
+    display: flex;
+    gap: 90px;
+}
+
+.period-container {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+
+.poster:hover {
+    transform: scale(1.1);
+    /* 이미지 크기 확대 */
+}
+
+.year {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 13px;
+}
 
 /* tablet */
 @media screen and (max-width: 1024px) {
