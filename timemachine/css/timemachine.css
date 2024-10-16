@@ -50,7 +50,6 @@ html {
     text-align: center;
 }
 
-
 .poster:hover {
     transform: scale(1.1);
     /* 이미지 크기 확대 */
@@ -66,14 +65,13 @@ html {
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-    .explain-container {
-        padding: 0 78px;
+    #main {
+        padding: 0 60px; 
     }
 
     .sub-logo {
-        width: 100%;
-        max-width: 686px;
-        height: 243px;
+        max-width: 900px; 
+        height: auto; 
     }
 
     .title {
@@ -81,60 +79,60 @@ html {
     }
 
     .subtitle {
-        font-size: 20px;
-        margin: 13px 0 17px 0;
+        font-size: 20px; 
+        margin: 20px 0 35px 0; 
+    }
+
+    .all-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 두 개씩 배치 */
+        gap: 40px; 
+    }
+
+    .period-container {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .poster {
+        max-width: 100%;
+        height: auto; 
     }
 }
 
 /* mobile */
 @media screen and (max-width: 700px) {
     #main {
-        padding: 0;
-    }
-
-    .explain-container {
-        padding: 0 55px;
+        padding: 0 30px;
     }
 
     .sub-logo {
-        width: 280px;
-        height: 95px;
-        margin-bottom: 50px;
+        max-width: 600px;
+        height: auto; 
     }
 
     .title {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .subtitle {
-        font-size: 15px;
-        margin: 13px 0 17px 0;
+        font-size: 14px;
+        margin: 13px 0 20px 0;
     }
 
     .all-container {
-        padding-left: 30px;
-        display: flex;
-        margin-top: 33px;
-        flex-wrap: wrap;
-        margin-right: 68px;
-        gap: 10px;
-    }
-    
-    .period-container {
-        width: calc(50% - 20px); /* 두개씩 배치 */
-        margin-bottom: 20px;
-    }
-    
-    .poster {
-        width: 230px;
-        height: 340px;
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개씩 */
+        gap: 20px; 
     }
 
-    .poster2 .year,
-    .poster4 .year {
-        display: block; 
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
+    .period-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .poster {
+        max-width: 180px; 
+        height: auto; 
     }
 }
