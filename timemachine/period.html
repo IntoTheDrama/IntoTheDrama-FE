@@ -7,11 +7,12 @@
     <title>Into The Drama</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/diary/css/write.css">
+    <link rel="stylesheet" href="/timemachine/css/period.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+
     <header>
         <nav id="nav">
             <div><a href="/"><img src="/image/detail/logo.png" alt="Into the Drama"></a></div>
@@ -29,23 +30,32 @@
     </header>
 
 
-    <main>
-        <div class="all-container">
-            <a href="/diary/diary.html"><img src="/image/detail/prev-button.png" alt="<" class="prev-btn"></a>
-
-            <form action="#" id="write-container">
-                <input type="text" id="title" placeholder="제목을 입력해 주세요"  required>
-                <textarea name="message" id="writing-box" rows="10" placeholder="원하시는 글을 작성해 주세요 (200자 이내)"
-                    maxlength="200"  required></textarea>
-                <div class="count">(0/200)</div>
-                <div class="btn-wrapper"><button class="send">작성하기</button></div>
-            </form>
-
+    <main id="main">
+       <div class="all-container">
+        <img src="/image/detail/2020-logo.png" alt="2020S BACK TO">
+        <p class="title">2010년도 드라마들을 즐겨보세요!</p>
+        <div class="button-container"> 
+            <!-- 버튼 요소들 -->
         </div>
+
+        <!-- search bar -->
+        <div class="search-container">
+            <img src="/image/detail/search.png" alt="">
+            <input type="text" class="search-box" placeholder="검색어를 입력하세요">
+        </div>
+    </div>
+
+    <!-- drama poster -->
+    <div class="dramaPoster-container">
+        
+        
+    </div>
+       
     </main>
 
     <script src="/js/nav.js"></script>
-    <script src="/diary/js/write.js"></script>
+    <script src="/timemachine/js/yearList.js"></script>
+    <script src="/timemachine/js/dramaPoster.js"></script>
 </body>
 
 </html>

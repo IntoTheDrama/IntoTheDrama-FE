@@ -1,4 +1,4 @@
-// 1990's posterlist
+// 1990's poster list
 var dramaPoster1990 = [
     {
         "id": 1,
@@ -173,7 +173,7 @@ var dramaPoster2020 = [
     {
         "id": 5,
         "title": "스위트홈",
-        "posterImg": "스위트홈"
+        "posterImg": "20-스위트홈"
     },
     {
         "id": 6,
@@ -191,3 +191,13 @@ var dramaPoster2020 = [
         "posterImg": "20-이태원클라쓰"
     },
 ]
+
+// 2020년도 poster img 가져오기
+const dramaPosterContainer = document.querySelector('.dramaPoster-container');
+let showPoster = ''
+dramaPoster2020.forEach(drama2020 =>{
+    showPoster +=`
+    <img src="/image/poster/${drama2020.posterImg}.png" alt="${drama2020.title}">
+    `
+})
+dramaPosterContainer.innerHTML = showPoster;
