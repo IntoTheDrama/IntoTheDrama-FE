@@ -33,8 +33,9 @@ html {
 }
 
 .poster {
-    width: 280px;
-    height: 500px;
+    width: 100%;
+    max-width: 240px;
+    height: 450px;
     /* 애니메이션 효과 */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -47,7 +48,6 @@ html {
 .period-container {
     display: inline-block;
     text-align: center;
-    position: relative;
 }
 
 
@@ -88,6 +88,10 @@ html {
 
 /* mobile */
 @media screen and (max-width: 700px) {
+    #main {
+        padding: 0;
+    }
+
     .explain-container {
         padding: 0 55px;
     }
@@ -105,5 +109,32 @@ html {
     .subtitle {
         font-size: 15px;
         margin: 13px 0 17px 0;
+    }
+
+    .all-container {
+        padding-left: 30px;
+        display: flex;
+        margin-top: 33px;
+        flex-wrap: wrap;
+        margin-right: 68px;
+        gap: 10px;
+    }
+    
+    .period-container {
+        width: calc(50% - 20px); /* 두개씩 배치 */
+        margin-bottom: 20px;
+    }
+    
+    .poster {
+        width: 230px;
+        height: 340px;
+    }
+
+    .poster2 .year,
+    .poster4 .year {
+        display: block; 
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
