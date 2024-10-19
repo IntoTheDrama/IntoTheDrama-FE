@@ -10,5 +10,3 @@ dramaOst.forEach(ost => {
 
     playlistBox.innerHTML = ostHtml;
 });
-
-
