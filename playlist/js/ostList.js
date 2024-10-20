@@ -197,4 +197,36 @@ var dramaOst =[
  
 ]
 
- 
+ // 검색 함수
+function searchOst() {
+    var input = document.querySelector('.search-box').value.toLowerCase();
+    var resultContainer = document.querySelector('.scroll-container');
+    resultContainer.innerHTML = ''; // 기존 결과 초기화
+    var filteredOst = dramaOst.filter(function(ost) {
+        return ost.dramaTitle.toLowerCase().includes(input);
+    });
+    if (filteredOst.length > 0) {
+        filteredOst.forEach(function(ost) {
+            // 검색 결과로 표시할 HTML 요소 생성
+            var ostElement = document.createElement('div');
+            ostElement.classList.add('playList');
+            ostElement.innerHTML = `
+                <p class="ostTitle"><strong>${ost.dramaTitle}</strong></p>
+            `;
+            ostElement.addEventListener('click', function() {
+                playOst(ost.audio);
+            });
+            resultContainer.appendChild(ostElement);
+        });
+    } else {
+        resultContainer.innerHTML = '<p>검색 결과가 없습니다.</p>';
+    }
+}
+// OST 재생 함수
+function playOst(audioSrc) {
+    var audioPlayer = document.getElementById('audio-player');
+    audioPlayer.src = audioSrc;
+    audioPlayer.play();
+}
+// 검색바 이벤트 리스너 등록
+document.querySelector('.search-box').addEventListener('keyup', searchOst);

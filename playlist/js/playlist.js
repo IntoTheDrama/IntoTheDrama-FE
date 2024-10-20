@@ -1,4 +1,4 @@
-const playlistBox = document.querySelector('.scroll-container'); // 상위 컨테이너 선택
+const playlistBox = document.querySelector('.scroll-container');  
 
 let ostHtml = ''
 dramaOst.forEach(ost => {
