@@ -31,6 +31,7 @@ button {
     border-radius: 30px;
     background: #FFF;
     margin-bottom: 70px;
+    border: none;
     /* transition: transform 0.2s ease; */
 }
 
