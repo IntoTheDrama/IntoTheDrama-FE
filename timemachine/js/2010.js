@@ -3,8 +3,11 @@ let showPoster2010 = '';
 
 dramaPoster2010.forEach(drama => {
     showPoster2010 += `
+    <div class="posterContainer">
     <img src="/image/poster/${drama.posterImg}.png" alt="${drama.title}">
-    `;
+    <p class="drama-title">${drama.title}</p>
+    </div>
+    `
 });
 
 dramaPosterContainer2010.innerHTML = showPoster2010;

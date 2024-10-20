@@ -4,8 +4,11 @@ let showPoster2020 = '';
 
 dramaPoster2020.forEach(drama => {
     showPoster2020 += `
+    <div class="posterContainer">
     <img src="/image/poster/${drama.posterImg}.png" alt="${drama.title}">
-    `;
+    <p class="drama-title">${drama.title}</p>
+    </div>
+    `
 });
 
 dramaPosterContainer2020.innerHTML = showPoster2020;

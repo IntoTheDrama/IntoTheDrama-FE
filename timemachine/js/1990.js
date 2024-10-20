@@ -2,7 +2,10 @@ const dramaPosterContainer90 = document.querySelector('.year90');
 let showPoster90 = ''
 dramaPoster1990.forEach(drama => {
     showPoster90 += `
+    <div class="posterContainer">
     <img src="/image/poster/${drama.posterImg}.png" alt="${drama.title}">
+    <p class="drama-title">${drama.title}</p>
+    </div>
     `
 })
 dramaPosterContainer90.innerHTML = showPoster90;

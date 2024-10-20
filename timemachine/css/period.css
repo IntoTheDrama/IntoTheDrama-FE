@@ -93,6 +93,13 @@ button:hover {
     cursor: pointer;
 }
 
+.drama-title{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.drama-title{}
 /* tablet */
 @media (max-width: 1024px) {
     #main {
