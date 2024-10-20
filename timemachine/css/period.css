@@ -83,6 +83,7 @@ button:hover {
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 120px;
+
 }
 
 .dramaPoster-container img {
@@ -93,13 +94,15 @@ button:hover {
     cursor: pointer;
 }
 
-.drama-title{
-    margin-top: 25px;
+.posterContainer {
     text-align: center;
+}
+
+.drama-title {
+    margin-top: 20px;
     font-size: 19px;
 }
 
-.drama-title{}
 /* tablet */
 @media (max-width: 1024px) {
     #main {
@@ -169,10 +172,16 @@ button:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 30px;
     }
 
     .dramaPoster-container img {
         width: 170px;
         height: 247.165px;
+    }
+
+    .drama-title {
+        margin-top: 10px;
+        font-size: 15px;
     }
 }
