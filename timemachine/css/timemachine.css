@@ -3,7 +3,7 @@ html {
 }
 
 #main {
-    margin: 140px 0 50px 0;
+    margin: 140px 0 150px 0;
     padding: 0 184px;
 }
 
@@ -36,6 +36,11 @@ html {
     height: 450px;
     /* 애니메이션 효과 */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.8;
+}
+
+.poster3{
+    border-top-left-radius: 5px; 
 }
 
 .all-container {
@@ -50,7 +55,7 @@ html {
 
 .poster:hover {
     transform: scale(1.1);
-    /* 이미지 크기 확대 */
+    opacity: 1;
 }
 
 .year {
@@ -96,6 +101,7 @@ html {
     .poster {
         max-width: 65%;
         height: auto; 
+        opacity: 1;
     }
 }
 
