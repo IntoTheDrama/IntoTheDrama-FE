@@ -47,4 +47,4 @@ document.querySelector('.send').addEventListener('click', function(event) {
         window.location.href = '/diary/diary.html';
     }
 });
-// localStorage.clear(); // data 지우기
+localStorage.clear(); // data 지우기
