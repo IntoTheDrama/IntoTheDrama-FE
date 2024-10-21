@@ -211,7 +211,7 @@ function searchOst() {
             var ostElement = document.createElement('div');
             ostElement.classList.add('playList');
             ostElement.innerHTML = `
-                <p class="ostTitle"><strong>${ost.dramaTitle}</strong></p>
+                <p class="ostTitle">${ost.dramaTitle}</p>
             `;
             ostElement.addEventListener('click', function() {
                 playOst(ost.audio);
