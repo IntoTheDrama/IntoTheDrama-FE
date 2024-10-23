@@ -2,25 +2,44 @@
 > 여러 드라마 정보를 제공하고, 이에관한 개인적인 감상들을 기록할 수 있는 반응형 웹사이트입니다.
 
 ## Function 📍
-1. `드라마 타임머신`
-   - 각 시대별로 해당 드라마의 정보 보기
-   - 드라마 검색
- 
-2. `OST 플레이리스트`
-   - OST 감상 / 검색
-   - 명대사 보기
-     
-3. `다이어리`
-   - 감상평
-   - 특정 에피소드에 관한 개인적인 글 업로드
+<details>
+<summary>Drama Timechine</summary>
+<div markdown="2">
+ <ul>
+   <li>드라마 검색</li>
+   <li>각 시대별로 해당 드라마의 정보 보기</li>
+ </ul>
+</div>
+</details>
 
+<details>
+<summary>OST Playlist</summary>
+<div markdown="2">
+ <ul>
+   <li>OST 감상</li>
+   <li>OST 검색</li>
+   <li>명대사 보기</li>
+ </ul>
+</div>
+</details>
+
+<details>
+<summary>Diary</summary>
+<div markdown="2">
+ <ul>
+   <li>감상평</li>
+   <li>특정 에피소드에 관한 개인적인 글 업로드</li>
+ </ul>
+</div>
+</details>
+
+ 
  
 
 ## Effect 💡
 -  특정 연도나 시대를 기반으로 한 드라마를 보며 `추억 회상`
 -  해당 드라마의 OST와 명대사를 동시에 감상가능 `(몰입감)`
 -  다이어리 기능을 통해 당시 느꼈던 감정들을 다시 `되새길` 수 있다.
-
 
 
 ## Period 🕰️
