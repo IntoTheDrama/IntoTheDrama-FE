@@ -46,6 +46,9 @@ html {
     display: flex;
     margin-bottom: 104px;
     background-color: black;
+    position: relative;
+    z-index: 10;  
+    pointer-events: auto;
 }
 
 .search-box {
@@ -91,8 +94,9 @@ html {
 }
 
 .famous-line-container p:nth-child(3) {
-    color: rgba(255, 255, 255, 0.34);
+    color: rgb(251 251 251 / 54%);
     font-size: 26px;
+    margin-bottom: 0;
 }
 
 /*임시*/
@@ -164,7 +168,7 @@ html {
     }
 
     .famous-line-container p:nth-child(1) {
-        font-size: 29px;
+        font-size: 28.5px;
     }
 
     .famous-line-container p:nth-child(2) {
@@ -173,6 +177,9 @@ html {
 
     .famous-line-container p:nth-child(3) {
         font-size: 23px;
+    }
+    .play-list{
+        font-size: 18px;
     }
 }
 
@@ -229,15 +236,15 @@ html {
     }
 
     .famous-line-container p:nth-child(1) {
-        font-size: 24px;
+        font-size: 23.7px;
     }
 
     .famous-line-container p:nth-child(2) {
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .famous-line-container p:nth-child(3) {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .record img {
