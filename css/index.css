@@ -10,16 +10,16 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+     
     margin: 200px 0 180px 0;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .main-logo {
     width: 100%;
     max-width: 549.368px;
     height: 135px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .title1 {
@@ -34,19 +34,16 @@ html {
     margin-bottom: 100px;
 }
 
-.scroll-button {
+.scroll-button, .section1 {
     text-align: center;
 }
 .introduction-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     
     margin: 0 auto;
 }
 .title-container>p {
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
     font-size: 50px;
 }
 
@@ -141,9 +138,8 @@ html {
         font-size: 22px;
     }
 
-    .title-container {
-        padding: 0 50px;
-
+    .section1 {
+        padding: 0 40px;
     }
 
     
