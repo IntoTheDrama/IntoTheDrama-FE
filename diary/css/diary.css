@@ -156,9 +156,9 @@ body>header {
 /* mobile */
 @media screen and (max-width: 700px) {
     #main {
-        margin-top: 150px;
+        margin: 150px 0 100px 0;
     }
-
+     
      .explain-container {
         padding: 0 55px;
     }

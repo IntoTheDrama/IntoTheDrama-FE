@@ -6,7 +6,7 @@ html {
 }
 
 #main {
-    margin: 200px 0 50px 0;
+    margin: 200px 0 100px 0;
     padding: 0 184px;
     display: flex;
     flex-direction: column;
@@ -199,11 +199,18 @@ html {
         width: 32vh;
         height: 7vh;
     }
+    .all-container{
+        border: 1.2px solid #FFF;
+    }
     .scroll-container{
         padding-right: 0;
     }
     .famous-line-container{
         padding-left: 0;
+    }
+    .record img{
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -249,8 +256,8 @@ html {
 
     .record img {
         width: 100%;
-        max-width: 300px;
-        height: 300px;
+        max-width: 270px;
+        height: 270px;
     }
 
     .play-list{
