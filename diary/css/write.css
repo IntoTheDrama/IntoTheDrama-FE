@@ -2,8 +2,7 @@
      background-image: url('/image/background/diary-bg.png');
      background-size: cover;
      background-repeat: no-repeat;
-     background-attachment: fixed;
-     /* 스크롤 시에도 배경 이미지 고정 */
+     background-attachment: fixed; 
  }
 
  body>header {
@@ -11,7 +10,7 @@
  }
 
  main {
-     margin-top: 200px;
+     margin: 200px 0 200px 0;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -117,12 +116,13 @@
          max-width: 800px;
          height: 600px;
      }
-     #write-container{
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        width: 600px;
-        margin: 0 auto;
+
+     #write-container {
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         width: 600px;
+         margin: 0 auto;
      }
 
      #title {
@@ -138,95 +138,113 @@
          width: 271px;
          height: 44px;
      }
-      
+
  }
- @media (max-width:900px){
-    .all-container{
-        width: 600px;
-    }
-    #write-container{
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        width: 450px;
-        margin: 0 auto;
+
+ @media (max-width:900px) {
+     .all-container {
+         width: 600px;
      }
-     .count{
-        margin-bottom: 20px;
+
+     #write-container {
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         width: 450px;
+         margin: 0 auto;
      }
-     .send{
-        width: 250px;
-        height: 40px;
+
+     .count {
+         margin-bottom: 20px;
+     }
+
+     .send {
+         width: 250px;
+         height: 40px;
      }
  }
 
-@media (min-width: 551px) and (max-width: 650px){
-    main{
-        margin: 150px 0 30px 0;
-    }
-    .all-container{
-        width: 500px;
-        height: 560px;
-   }
-   #write-container{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 385px;
-    margin: 0 auto;
+ @media (min-width: 551px) and (max-width: 650px) {
+     main {
+         margin: 150px 0 80px 0;
+     }
+
+     .all-container {
+         width: 500px;
+         height: 560px;
+     }
+
+     #write-container {
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         width: 385px;
+         margin: 0 auto;
+     }
+
+     #title {
+         font-size: 17px;
+     }
+
+     #writing-box {
+         font-size: 13px;
+         padding: 20px;
+     }
+
+     .send {
+         font-size: 16px;
+     }
+
+     .prev-btn {
+         width: 25px;
+         height: 25px;
+     }
  }
- #title{
-    font-size: 17px;
- }
- #writing-box{
-    font-size: 13px;
-    padding: 20px;
- }
- .send{
-    font-size: 16px;
- }
- .prev-btn{
-    width: 25px;
-    height: 25px;
- }
-} 
-    
- @media (max-width:550px){
-    main{
-        margin: 150px 0 30px 0;
-    }
-    .all-container{
+
+ @media (max-width:550px) {
+     main {
+         margin: 150px 0 100px 0;
+     }
+
+     .all-container {
          width: 320px;
          height: 600px;
-    }
-    #write-container{
-        display: flex;
-        justify-content: center;
-        width: 250px;
-        margin: 0 auto;
      }
-     #writing-box{
-        padding: 20px 10px 0 12px;
+
+     #write-container {
+         display: flex;
+         justify-content: center;
+         width: 250px;
+         margin: 0 auto;
      }
-     #title{
-        font-size: 15px;
-        margin-left: 10px;
+
+     #writing-box {
+         padding: 20px 10px 0 12px;
      }
-     .count{
-        font-size: 10px;
+
+     #title {
+         font-size: 15px;
+         margin-left: 10px;
      }
-     #writing-box{
-        font-size: 10px;
-        height: 320px;
+
+     .count {
+         font-size: 10px;
      }
-     .prev-btn{
-        margin: 30px 20px;
-        width: 22px;
-        height: 22px;
+
+     #writing-box {
+         font-size: 10px;
+         height: 320px;
      }
-     .send{
-        width: 180px;
-        height: 33px;
-        font-size: 13px;
+
+     .prev-btn {
+         margin: 30px 20px;
+         width: 22px;
+         height: 22px;
+     }
+
+     .send {
+         width: 180px;
+         height: 33px;
+         font-size: 13px;
      }
  }
