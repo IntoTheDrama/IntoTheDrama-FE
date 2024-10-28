@@ -67,6 +67,28 @@ html {
     margin-top: 13px;
 }
 
+@media screen and (max-width:1350px){
+    .all-container{
+        gap: 31px;
+    }
+     .poster{
+        width: 100%;
+        max-width: 400px;
+        height: 340px;
+    }
+}
+
+@media (max-width:1025px) and (max-width:1200px){
+    .all-container {
+         
+        gap: 20px;
+    }
+    .poster{
+        width: 100%;
+        max-width: 340px;
+        height: 350px;
+    }
+}
 /* tablet */
 @media screen and (max-width: 1024px) {
     #main {
