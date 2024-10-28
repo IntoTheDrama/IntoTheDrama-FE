@@ -102,6 +102,25 @@ button:hover {
     margin-top: 20px;
     font-size: 19px;
 }
+@media screen and (max-width:1350px){
+     
+     .dramaPoster-container img{
+        width: 100%;
+        max-width: 400px;
+        height: 340px;
+    }
+}
+@media screen and (max-width:1200px){
+    .dramaPoster-container{
+        gap: 20px;
+    }
+    .dramaPoster-container img{
+        width: 100%;
+        max-width: 500px;
+        height: 340px;
+    }
+}
+
 
 /* tablet */
 @media (max-width: 1024px) {

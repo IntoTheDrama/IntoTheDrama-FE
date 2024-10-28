@@ -27,8 +27,9 @@ html {
 /*img 조절*/
 .record img {
     width: 100%;
-    max-width: 400px;
-    height: 400px;
+    max-width: 350px;
+    height: 350px;
+    margin-top: -10px;
 }
 
 .search-container>img {
@@ -46,7 +47,9 @@ html {
     display: flex;
     margin-bottom: 104px;
     background-color: black;
-     
+    position: relative;
+    z-index: 10;  
+    pointer-events: auto;
 }
 
 .search-box {
@@ -67,14 +70,16 @@ html {
     justify-content: center;
     padding-top: 120px;
     border-radius: 11.63px;
-    border: 1.15px solid #FFF;
+    border: 1.1px solid #FFF;
     background: rgba(212, 212, 212, 0.10);
     backdrop-filter: blur(6.5px);
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
 }
-
+.famous-line-container{
+    margin-top: -19%;
+}
 .famous-line-container p {
     margin-bottom: 25px;
     font-weight: 700;
@@ -156,7 +161,7 @@ html {
 /*tablet*/
 @media screen and (max-width: 1330px) {
     .ost-container {
-        gap: 20px;
+        gap: 25px;
     }
     .scroll-container{
         padding-right: 90px;
@@ -205,6 +210,7 @@ html {
     }
     .famous-line-container{
         padding-left: 0;
+        margin-top: 20px;
     }
     .record img{
         width: 350px;
@@ -238,6 +244,7 @@ html {
     }
     .famous-line-container{
         padding: 0;
+        
     }
 
     .famous-line-container p:nth-child(1) {
@@ -254,8 +261,8 @@ html {
 
     .record img {
         width: 100%;
-        max-width: 270px;
-        height: 270px;
+        max-width: 240px;
+        height: 250px;
     }
 
     .play-list{
