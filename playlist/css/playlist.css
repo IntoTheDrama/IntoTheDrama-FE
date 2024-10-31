@@ -59,6 +59,7 @@ html {
     font-size: 16px;
     margin-left: 20px;
     color: rgba(224, 224, 224, 0.87);
+    width: 400px;
 }
 
 .search-box::placeholder {
@@ -184,6 +185,7 @@ html {
     .play-list{
         font-size: 18px;
     }
+     
 }
 
 /* tablet */
@@ -270,5 +272,8 @@ html {
         width: 250px;
         height: 54px;
         border-radius: 8px;
+    }
+    .search-box{
+        width: 200px;
     }
 }
