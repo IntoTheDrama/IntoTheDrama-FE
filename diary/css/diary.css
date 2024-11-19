@@ -23,6 +23,12 @@ body>header {
     margin-bottom: 50px;
 }
 
+.dramaTitle {
+    white-space: nowrap;
+    width: 100px;
+}
+
+
 .explain-container {
     padding-left: 184px;
 }
@@ -106,8 +112,8 @@ body>header {
 }
 
 .diarylist-container .user-container img {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 35px;
     margin-right: 10px;
 }
 
@@ -126,6 +132,30 @@ body>header {
 .diarylist-container:hover {
     transform: translateY(-10px);
 }
+
+.edit-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+.edit-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.edit-menu button:hover {
+    background-color: #ddd;
+}
+
+
 
 /* tablet */
 @media screen and (max-width: 1024px) {
@@ -158,8 +188,8 @@ body>header {
     #main {
         margin: 150px 0 100px 0;
     }
-     
-     .explain-container {
+
+    .explain-container {
         padding: 0 55px;
     }
 
