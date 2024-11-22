@@ -48,7 +48,7 @@ html {
     margin-bottom: 104px;
     background-color: black;
     position: relative;
-    z-index: 10;  
+    z-index: 10;
     pointer-events: auto;
 }
 
@@ -78,9 +78,11 @@ html {
     max-width: 1500px;
     margin: 0 auto;
 }
-.famous-line-container{
+
+.famous-line-container {
     margin-top: -19%;
 }
+
 .famous-line-container p {
     margin-bottom: 25px;
     font-weight: 700;
@@ -155,18 +157,21 @@ html {
     backdrop-filter: blur(25px);
     cursor: pointer;
 }
-.play-list:hover{ 
+
+.play-list:hover {
     border: 1px solid rgb(185, 183, 183);
- }
+}
 
 /*tablet*/
 @media screen and (max-width: 1330px) {
     .ost-container {
         gap: 25px;
     }
-    .scroll-container{
+
+    .scroll-container {
         padding-right: 90px;
     }
+
     .famous-line-container {
         padding-left: 50px;
     }
@@ -182,48 +187,55 @@ html {
     .famous-line-container p:nth-child(3) {
         font-size: 23px;
     }
-    .play-list{
+
+    .play-list {
         font-size: 18px;
     }
-     
+
 }
 
 /* tablet */
 @media screen and (max-width: 1024px) {
 
-    #main{
+    #main {
         display: flex;
         flex-direction: column;
         padding: 0 78px;
     }
-    .ost-container{
+
+    .ost-container {
         display: flex;
         flex-direction: column;
     }
-    .play-list{
+
+    .play-list {
         width: 300px;
         height: 68px;
     }
-    .all-container{
+
+    .all-container {
         border: 1.2px solid #FFF;
     }
-    .scroll-container{
+
+    .scroll-container {
         padding-right: 0;
     }
-    .famous-line-container{
+
+    .famous-line-container {
         padding-left: 0;
         margin-top: 20px;
     }
-    .record img{
+
+    .record img {
         width: 350px;
         height: 350px;
     }
 }
 
 /* mobile */
- @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     #main {
-        padding: 0 50px; 
+        padding: 0 50px;
         margin-top: 150px;
     }
 
@@ -244,9 +256,10 @@ html {
     .search-container {
         margin-bottom: -50px;
     }
-    .famous-line-container{
+
+    .famous-line-container {
         padding: 0;
-        
+
     }
 
     .famous-line-container p:nth-child(1) {
@@ -267,13 +280,14 @@ html {
         height: 250px;
     }
 
-    .play-list{
+    .play-list {
         font-size: 16px;
         width: 250px;
         height: 54px;
         border-radius: 8px;
     }
-    .search-box{
+
+    .search-box {
         width: 200px;
     }
 }

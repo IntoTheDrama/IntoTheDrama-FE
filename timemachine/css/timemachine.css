@@ -36,12 +36,12 @@ html {
     max-width: 240px;
     height: 450px;
     /* 애니메이션 효과 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
     opacity: 0.8;
 }
 
-.poster3{
-    border-top-left-radius: 5px; 
+.poster3 {
+    border-top-left-radius: 5px;
 }
 
 .all-container {
@@ -67,37 +67,40 @@ html {
     margin-top: 13px;
 }
 
-@media screen and (max-width:1350px){
-    .all-container{
+@media screen and (max-width:1350px) {
+    .all-container {
         gap: 31px;
     }
-     .poster{
+
+    .poster {
         width: 100%;
         max-width: 400px;
         height: 340px;
     }
 }
 
-@media (max-width:1025px) and (max-width:1200px){
+@media (max-width:1025px) and (max-width:1200px) {
     .all-container {
-         
+
         gap: 20px;
     }
-    .poster{
+
+    .poster {
         width: 100%;
         max-width: 340px;
         height: 350px;
     }
 }
+
 /* tablet */
 @media screen and (max-width: 1024px) {
     #main {
-        padding: 0 60px; 
+        padding: 0 60px;
     }
 
     .sub-logo {
-        max-width: 900px; 
-        height: auto; 
+        max-width: 900px;
+        height: auto;
     }
 
     .title {
@@ -106,24 +109,25 @@ html {
     }
 
     .subtitle {
-        font-size: 17px; 
-        margin: 20px 0 40px 28px; 
+        font-size: 17px;
+        margin: 20px 0 40px 28px;
     }
 
     .all-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 두 개씩 배치 */
-        gap: 20px; 
+        grid-template-columns: repeat(2, 1fr);
+        /* 두 개씩 배치 */
+        gap: 20px;
     }
 
     .period-container {
         width: 100%;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .poster {
         max-width: 65%;
-        height: auto; 
+        height: auto;
         opacity: 1;
     }
 }
@@ -136,7 +140,7 @@ html {
 
     .sub-logo {
         max-width: 600px;
-        height: auto; 
+        height: auto;
     }
 
     .title {
@@ -144,7 +148,7 @@ html {
         margin: 10px 0 0 2px;
     }
 
-    .year{
+    .year {
         font-size: 16px;
     }
 
@@ -154,9 +158,10 @@ html {
     }
 
     .all-container {
-        display: grid; 
-        grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개씩 */
-        gap: 20px; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 한 줄에 두 개씩 */
+        gap: 20px;
     }
 
     .period-container {
@@ -166,6 +171,6 @@ html {
 
     .poster {
         max-width: 145px;
-        height: auto; 
+        height: auto;
     }
 }
