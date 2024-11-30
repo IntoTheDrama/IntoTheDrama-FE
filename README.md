@@ -23,5 +23,3 @@
 :---|:---:|
 [김호정](https://github.com/0826486)| 개발, 기획, 디자인
 [배주연](https://github.com/juyeon-Bae)|개발, 기획, 디자인
-
- 
