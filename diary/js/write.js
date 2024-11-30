@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const textarea = document.getElementById('writing-box');
     const countDisplay = document.querySelector('.count');
 
-    textarea.addEventListener('input', function() {
-       
+    textarea.addEventListener('input', function () {
+
         const currentLength = textarea.value.length;
         countDisplay.textContent = `(${currentLength}/200)`;
 
-         //200자 초과 시, 최대 글자 수로 자르기
+        //200자 초과 시, 최대 글자 수로 자르기
         if (currentLength > 200) {
             textarea.value = textarea.value.substring(0, 200);
         }
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // write에서 값을 쓰고 localStorage에 값 저장하기
-document.querySelector('.send').addEventListener('click', function(event) {
-    event.preventDefault();  
-    
+document.querySelector('.send').addEventListener('click', function (event) {
+    event.preventDefault();
+
     const title = document.querySelector('#title').value;
     const message = document.querySelector('#writing-box').value;
 
@@ -28,7 +28,7 @@ document.querySelector('.send').addEventListener('click', function(event) {
     }
 
     const userName = prompt("사용자 이름을 입력해 주세요 : ");
-    
+
     if (userName) {
         // localStorage에 저장할 객체 생성
         const diaryEntry = {
@@ -47,4 +47,4 @@ document.querySelector('.send').addEventListener('click', function(event) {
         window.location.href = '/diary/diary.html';
     }
 });
-localStorage.clear(); // data 지우기
+// localStorage.clear(); // data 지우기

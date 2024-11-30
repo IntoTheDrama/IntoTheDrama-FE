@@ -1,15 +1,17 @@
-const toggleMenu = ()=>{
+const toggleMenu = () => {
     const hamburgerBar = document.querySelector('.nav-toggle');
-    const hamburgerBarIcon = document.getElementsByTagName('i')[0];
+    const hamburgerBarIcon = document.querySelector('.nav-toggle i');
     const navList = document.querySelector('.nav-menu');
+    const header = document.querySelector('header');
 
-    hamburgerBar.onclick = ()=>{
+    hamburgerBar.onclick = () => {
         navList.classList.toggle("toggleActive");
+        header.classList.toggle("toggleActive");
 
-        // icon 바꾸기
+        // 아이콘 전환
         hamburgerBarIcon.classList.toggle("bi-list");
         hamburgerBarIcon.classList.toggle("bi-x-lg");
-    }
-}
+    };
+};
 
 toggleMenu();

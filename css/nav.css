@@ -55,44 +55,22 @@ nav img {
 @media screen and (max-width:700px) {
     header {
         padding: 20px 27px 11px 50px;
-
+        position: relative;
     }
 
     #nav {
         height: 70px;
     }
 
-    .nav-menu {
-        display: none;
-    }
-
-    nav img {
-        width: 130px;
-        height: 35px;
-    }
-
-    .nav-menu {
-        display: none;  
-        flex-direction: column;  
-        position: absolute;  
-        top: 100px;  
-        right: 0;  
-        width: 100%; /* 전체 너비 사용 */
-        backdrop-filter: blur(8.5px);
-        z-index: 99;  
-        border-top: 1px solid #fff;  
-    }
-
     .nav-item {
         padding: 15px;
-        text-align: center;  
-        border-bottom: 1px solid #444;  
-        font-size: 18px; 
+        text-align: center;
+        border-bottom: 1px solid #444;
+        font-size: 16px;
     }
 
     .nav-item:hover {
         background: rgba(255, 255, 255, 0.2);
-         
     }
 
     .nav-toggle {
@@ -102,12 +80,34 @@ nav img {
         cursor: pointer;
     }
 
+    header.toggleActive {
+        background-color: rgb(31 31 31 / 52%);
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        border-top: 1px solid #fff;
+        visibility: hidden;
+    }
+
+    header.toggleActive .nav-menu {
+        display: block;
+        backdrop-filter: blur(8.5px);
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
     .bi-x-lg {
         font-size: 23px;
     }
- 
-    .toggleActive {
-        display: block;  
-    }
-     
 }
